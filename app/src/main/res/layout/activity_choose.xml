@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7F6"
+    tools:context=".ChooseActivity">
+
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="24dp"
+        android:text="Pick your side"
+        android:fontFamily="@font/lato_bold"
+        android:textColor="@color/black1"
+        android:textSize="25sp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/label"
+        android:overScrollMode="never">
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            app:neumorph_shadowColorDark="@color/shade"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/spider"
+                        android:src="@drawable/spider"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+
+                        android:layout_marginTop="5dp"
+                        android:layout_height="150dp"/>
+
+                    <ImageView
+                        android:id="@+id/iron"
+                        android:src="@drawable/iron"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+
+                        android:layout_height="150dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/dead"
+                        android:src="@drawable/dead"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+
+                        android:layout_height="150dp"/>
+
+                    <ImageView
+                        android:id="@+id/hulk"
+                        android:src="@drawable/hulk"
+                        android:layout_width="0dp"
+                        android:layout_marginTop="5dp"
+
+                        android:layout_weight="1"
+                        android:layout_height="150dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/venom"
+                        android:src="@drawable/venom"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+
+                        android:layout_height="150dp"/>
+
+                    <ImageView
+                        android:id="@+id/joker"
+                        android:src="@drawable/joker"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+
+                        android:layout_height="150dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <soup.neumorphism.NeumorphButton
+        style="@style/Widget.Neumorph.Button"
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/lato_bold"
+        android:layout_marginTop="600dp"
+        android:textColor="@color/red"
+        android:textSize="18dp"
+        app:neumorph_shadowColorDark="@color/shade"
+        android:text="Continue" />
+
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent"
+    android:background="@color/light_backgroud"
+    tools:context=".NameActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="271dp"
+        android:layout_height="194dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/ele4" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="Enter your Names"
+        android:fontFamily="@font/lato_bold"
+        android:textColor="@color/black1"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/center"
+        android:layout_marginHorizontal="30dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:neumorph_shapeType="basin">
+
+        <EditText
+            android:id="@+id/first_player"
+            android:layout_width="match_parent"
+            android:maxLength="20"
+            android:layout_height="45dp"
+            android:hint="First player"
+            android:inputType="textPersonName|textCapWords"
+            android:singleLine="true"
+            android:textColor="@color/black1"
+            android:fontFamily="@font/lato_bold"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp"
+            android:textColorHint="#6A575757"
+            android:background="@drawable/no_background"
+            android:textCursorDrawable="@drawable/curser"
+            android:layout_marginBottom="16dp"
+            android:theme="@style/TextLabel" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:neumorph_shapeType="basin">
+
+        <EditText
+            android:id="@+id/second_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/no_background"
+            android:textCursorDrawable="@drawable/curser"
+            android:maxLength="20"
+            android:hint="Second player"
+            android:fontFamily="@font/lato_bold"
+            android:inputType="textPersonName|textCapWords"
+            android:singleLine="true"
+            android:textColor="@color/black1"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp"
+            android:textColorHint="#6A575757"
+            android:theme="@style/TextLabel" />
+    </soup.neumorphism.NeumorphCardView>
+
+    </LinearLayout>
+
+    <soup.neumorphism.NeumorphButton
+        style="@style/Widget.Neumorph.Button"
+        android:id="@+id/button2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/lato_bold"
+        android:textColor="@color/red"
+        android:textSize="18dp"
+        app:neumorph_shadowColorDark="@color/shade"
+        android:text="Continue" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="220dp"
+        android:layout_height="170dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/ele7"
+        android:scaleType="fitEnd"/>
+
+
+</RelativeLayout>
