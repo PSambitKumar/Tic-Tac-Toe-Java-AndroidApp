@@ -97,7 +97,7 @@
         android:layout_below="@+id/center"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
-        android:fontFamily="@font/lato_bold"
+        android:fontFamily="@font/lato_black"
         android:textColor="@color/red"
         android:textSize="18dp"
         app:neumorph_shadowColorDark="@color/shade"
