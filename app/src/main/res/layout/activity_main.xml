@@ -32,10 +32,10 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:scaleType="centerCrop"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/top"/>
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/top" />
 
                 <LinearLayout
                     android:layout_marginTop="48dp"
@@ -87,10 +87,10 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:scaleType="centerCrop"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/bot"/>
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bot" />
 
                 <LinearLayout
                     android:layout_marginTop="48dp"
@@ -111,7 +111,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:maxWidth="180dp"
-                        android:text="Make fun with your friends, You can choose between different shapes"
+                        android:text="Make fun with your friends, You can choose between different characters"
                         android:textColor="@color/black1"
                         android:fontFamily="@font/lato_bold"
                         android:layout_marginTop="10dp"

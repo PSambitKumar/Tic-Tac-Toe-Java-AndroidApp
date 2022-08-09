@@ -25,7 +25,7 @@ public class ChooseActivity extends AppCompatActivity {
     boolean player1ax, isSelected, isFirstChoose;
 
     private String shape;
-    private ImageView squareImage, triangleImage, oImage, xImage, starImage, polyImage;
+    private ImageView joker, venom, spider, hulk, dead, iron;
     private TextView label;
     private Timer timer;
 
@@ -52,107 +52,107 @@ public class ChooseActivity extends AppCompatActivity {
             label.setText("Pick your side");
         }
 
-        oImage = findViewById(R.id.spider);
-        polyImage = findViewById(R.id.iron);
-        xImage = findViewById(R.id.hulk);
-        starImage = findViewById(R.id.dead);
-        triangleImage = findViewById(R.id.venom);
-        squareImage = findViewById(R.id.joker);
+        spider = findViewById(R.id.spider);
+        iron = findViewById(R.id.iron);
+        hulk = findViewById(R.id.hulk);
+        dead = findViewById(R.id.dead);
+        venom = findViewById(R.id.venom);
+        joker = findViewById(R.id.joker);
 
-        oImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.transparent));
-        polyImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-        starImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-        xImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-        triangleImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-        squareImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+        spider.setColorFilter(getApplicationContext().getResources().getColor(R.color.transparent));
+        iron.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+        dead.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+        hulk.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+        venom.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+        joker.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
 
-        polyImage.setOnClickListener(new View.OnClickListener() {
+        iron.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 isSelected = true;
                 player1ax = false;
-                shape = "poly";
-                polyImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.transparent));
-                oImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                starImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                xImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                triangleImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                squareImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                shape = "iron";
+                iron.setColorFilter(getApplicationContext().getResources().getColor(R.color.transparent));
+                spider.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                dead.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                hulk.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                venom.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                joker.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
             }
         });
 
-        oImage.setOnClickListener(new View.OnClickListener() {
+        spider.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 isSelected = true;
                 player1ax = true;
-                shape = "o";
-                oImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.transparent));
-                polyImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                starImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                xImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                triangleImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                squareImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                shape = "spider";
+                spider.setColorFilter(getApplicationContext().getResources().getColor(R.color.transparent));
+                iron.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                dead.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                hulk.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                venom.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                joker.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
             }
         });
 
-        xImage.setOnClickListener(new View.OnClickListener() {
+        hulk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 isSelected = true;
                 player1ax = false;
-                shape = "x";
-                xImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.transparent));
-                polyImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                starImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                oImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                triangleImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                squareImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                shape = "hulk";
+                hulk.setColorFilter(getApplicationContext().getResources().getColor(R.color.transparent));
+                iron.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                dead.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                spider.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                venom.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                joker.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
             }
         });
 
-        starImage.setOnClickListener(new View.OnClickListener() {
+        dead.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 isSelected = true;
                 player1ax = true;
                 shape = "star";
-                starImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.transparent));
-                polyImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                xImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                oImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                triangleImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                squareImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                dead.setColorFilter(getApplicationContext().getResources().getColor(R.color.transparent));
+                iron.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                hulk.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                spider.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                venom.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                joker.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
             }
         });
 
-        triangleImage.setOnClickListener(new View.OnClickListener() {
+        venom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 isSelected = true;
                 player1ax = true;
                 shape = "triangle";
-                triangleImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.transparent));
-                starImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                oImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                xImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                squareImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                polyImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                venom.setColorFilter(getApplicationContext().getResources().getColor(R.color.transparent));
+                dead.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                spider.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                hulk.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                joker.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                iron.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
             }
         });
 
-        squareImage.setOnClickListener(new View.OnClickListener() {
+        joker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 isSelected = true;
                 player1ax = false;
                 shape = "square";
-                squareImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.transparent));
-                starImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                oImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                triangleImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                xImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-                polyImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                joker.setColorFilter(getApplicationContext().getResources().getColor(R.color.transparent));
+                dead.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                spider.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                venom.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                hulk.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+                iron.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
             }
         });
 
@@ -207,31 +207,31 @@ public class ChooseActivity extends AppCompatActivity {
             label.setText("Pick AI side");
         }
 
-        oImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.transparent));
-        polyImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-        starImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-        xImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-        triangleImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
-        squareImage.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+        spider.setColorFilter(getApplicationContext().getResources().getColor(R.color.transparent));
+        iron.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+        dead.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+        hulk.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+        venom.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
+        joker.setColorFilter(getApplicationContext().getResources().getColor(R.color.tint2));
 
         switch (shape) {
             case "o":
-                oImage.setEnabled(false);
+                spider.setEnabled(false);
                 break;
             case "x":
-                xImage.setEnabled(false);
+                hulk.setEnabled(false);
                 break;
             case "poly":
-                polyImage.setEnabled(false);
+                iron.setEnabled(false);
                 break;
             case "triangle":
-                triangleImage.setEnabled(false);
+                venom.setEnabled(false);
                 break;
             case "square":
-                squareImage.setEnabled(false);
+                joker.setEnabled(false);
                 break;
             case "star":
-                starImage.setEnabled(false);
+                dead.setEnabled(false);
                 break;
         }
 
